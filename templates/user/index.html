@@ -1,0 +1,47 @@
+{% extends 'user/base.html' %}
+
+{% load static %}
+{% block name %}
+{{profile.name}}
+{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section id="hero" class="hero section dark-background">
+
+  <img src="{{profile.avatar.url}}" alt="" data-aos="fade-in" class="">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <h2>{{profile.name}}</h2>
+    <p>I'm <span class="typed" data-typed-items=" {{profile.profession}}"></span><span
+        class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span
+        class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+  </div>
+
+</section><!-- /Hero Section -->
+
+<!-- About Section -->
+<!-- /About Section -->
+
+<!-- Stats Section -->
+
+
+<!-- Skills Section -->
+<!-- /Skills Section -->
+
+<!-- Resume Section -->
+
+
+<!-- Portfolio Section -->
+
+
+<!-- Services Section -->
+<!-- /Services Section -->
+
+
+
+<!-- Contact Section -->
+<!-- /Contact Section -->
+
+{% endblock %}

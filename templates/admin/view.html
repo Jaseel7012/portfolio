@@ -1,0 +1,27 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+{% block content %}
+
+<table class="table table-success table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">email</th>
+      <th scope="col">Profession</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for profile in profiles %}
+    <tr>
+      <th scope="row">{{forloop.counter}}</th>
+      <td>{{profile.name}}</td>
+      <td>{{profile.email}}</td>
+      <td>{{profile.profession}}</td>
+    </tr>
+    {% endfor %}
+
+
+  </tbody>
+</table>
+{% endblock %}

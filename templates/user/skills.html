@@ -1,0 +1,98 @@
+{% extends 'user/base.html' %}
+
+{% load static %}
+{% block name %}
+{{profile.name}}
+{% endblock %}
+
+{% block content %}
+
+<section id="services" class="services section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+        <p></p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+        <div class="row gy-4">
+
+
+            <!-- End Service Item -->
+
+            <!-- End Service Item -->
+
+            <!-- End Service Item -->
+
+            <!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon flex-shrink-0"><i class="fa fa-book" style="font-size:48px;color:red"></i></div>
+                <div>
+                    <h4 class="title"><a href="https://jaseeljctcs.pythonanywhere.com/" class="stretched-link">eBook</a>
+                    </h4>
+                    <p class="description">The Book Collection Manager is a Django-based web application designed to
+                        help users catalog and manage their personal libraries. This application allows users to add,
+                        edit, and delete book entries,
+
+                        and search functionality,
+
+                        <br>Key Features:
+
+                        <li>User authentication and profiles</li>
+                        <li>Add, edit, and delete books</li>
+
+
+                        <li> Search and filter functionality by author and book title</li>
+                    </p>
+                </div>
+            </div><!-- End Service Item -->
+
+
+
+
+        </div>
+
+    </div>
+
+</section>
+<section id="skills" class="skills section light-background">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation container">
+            {% for skill in skills %}
+            <div class="card text-center " style="width: 50%;">
+                <div class="col-lg-6 ">
+
+                    <div class="progress ">
+                        <span class="skill mt-2"><span>
+                                <h3>{{skill}}</h3>
+                            </span>
+
+                    </div><!-- End Skills Item -->
+
+                    <!-- End Skills Item -->
+
+                    <!-- End Skills Item -->
+
+                </div>
+            </div>
+
+            {% endfor %}
+
+
+
+        </div>
+
+    </div>
+
+</section>
+{% endblock %}
